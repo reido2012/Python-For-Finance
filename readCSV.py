@@ -14,7 +14,19 @@ def test_run():
     #print(df) 
     
     #Print top 5 lines of csv
+    print("\nHEAD")
+    print("#################")
     print(df.head())
+    
+    #Print last 5 lines of 
+    print("\nTAIL")
+    print("#################")
+    print(df.tail())
+    
+    #Print select rows
+    print("\n Between index 10 and 20")
+    print(df[10:21])
+    
 
 if __name__ == "__main__":
         test_run()

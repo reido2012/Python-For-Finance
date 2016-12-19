@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec 19 11:20:15 2016
+
+@author: oreid
+"""
+
+import pandas as pd
+
+def get_max_close(symbol):
+    """Return the maximum closing value of stock indicated by the symbol
+    Note: Data for a stock is stored in file: data/ <symbol>.csv
+    """
+    df = pd.read_csv("data/{}.csv".format(symbol)) #Read in data
+    return df['Close'].max() #Compute and return max
+
+def test_run():
+    for symbol in ['AAPL', 'IBM']:
+        print("Max Close")
+        print( symbol, get_max_close(symbol))

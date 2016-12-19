@@ -23,7 +23,7 @@ def test_run():
     print("#################")
     print(df.tail())
     
-    #Print select rows
+    #Print select rows - called slicing
     print("\n Between index 10 and 20")
     print(df[10:21])
     

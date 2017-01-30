@@ -33,7 +33,6 @@ def get_data(symbols, dates):
         
         if symbol == 'SPY': #Drop dates SPY did not trade
             df = df.dropna(subset=["SPY"])
-            
         
     return df
 

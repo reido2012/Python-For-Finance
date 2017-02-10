@@ -26,7 +26,7 @@ def test_run():
                         na_values=['nan']
                         )
     
-    #Join the two datframes
+    #Join the two dataframes
     df1 = df1.join(dfSPY, how ='inner')
     print (df1)
     

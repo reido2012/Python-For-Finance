@@ -67,6 +67,11 @@ def test_run():
     df = normalize_data(df)
     plot_selected(df, symbols, start_date, end_date)
     
+    #compute global statistics for each stock
+    #df.mean - Mean for each column
+    #df.median, mode,std (standard deviation)
+    print(df.std())
+    
     
 
     
